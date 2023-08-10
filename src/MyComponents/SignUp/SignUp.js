@@ -27,7 +27,7 @@ export const SignUp = () => {
       } else if (!form.Email.includes("@")) {
         alert("Please enter a valid email address.");
         isFormValid = false;
-      } else if (form.Phoneno.length !== 11 || !/^\d+$/.test(form.Phoneno)) {
+      } else if (form.Phoneno.length !== 11) {
         alert("Please enter a valid 11-digit phone number.");
         isFormValid = false;
       } 
